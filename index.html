@@ -13,32 +13,22 @@
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
-        </div>
-    </header>
-
     <main>
         <div class="box">
-            <label>
-                Happiness
-                <input id="happiness-input" type="number" min="1" max="10" />
-            </label>
-            <label>
-                Strength
-                <input id="strength-input" type="number" min="1" max="10" />
-            </label>
+            <h1>Create a character!</h1>
+            <p>Put a number 1-10, let's see what you get!</p>
+            <input id="happiness-input" type="number" min="1" max="10" placeholder="Happiness" />
+            <input id="strength-input" type="number" min="1" max="10" placeholder="Strength"/>
             <button id="create-button">
                 Create character
             </button>
-            <img src id="happiness-image" />
-            <img src id="strength-image" />
         </div>
+        <div id="images">
+            <img id="happiness-image"/>
+            <img id="strength-image"/>
+        </div>
+        
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
 
     <script type="module" src="./app.js"></script>
 </body>
